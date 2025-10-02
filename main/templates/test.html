@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADHD Test</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="ADHD Test Logo" class="logo">
+        <h1>ADHD Test</h1>
+    </div>
+    
+    <div id="question-card">
+        <!-- Dynamic question will be loaded here -->
+    </div>
+
+    <div id="navigation">
+        <button id="prev-btn" disabled>Previous</button>
+        <button id="next-btn">Next</button>
+        <button id="submit-btn" style="display: none;">Submit</button>
+    </div>
+
+    <div id="results-container" style="display: none;">
+        <!-- Results will be displayed here -->
+    </div>
+
+    <div id="progress-container">
+        <div id="progress-bar">
+          <span id="progress-text">0%</span>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+4

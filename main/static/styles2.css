@@ -1,0 +1,79 @@
+/* General Page Styling */
+body {
+    background-image: url("./background.jpg");
+    background-size: cover;  /* Cover the entire viewport */
+    background-position: center;  /* Center the image */
+    background-repeat: no-repeat;  /* Prevent repetition */
+    height: 100vh;  /* Ensure full height */
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for centering elements */
+.container {
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+}
+
+/* Logo & Heading */
+.logo-section {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+}
+
+.logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 15px;
+    border-radius: 50%; /* Makes it circular */
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); /* Soft glow effect */
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: #222;
+}
+
+/* Description */
+.description {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0 20px;
+    color: #444;
+    transform: translateY(-50%);
+}
+
+/* Start Button */
+.start-btn {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.start-btn:hover {
+    background: #0056b3;
+}

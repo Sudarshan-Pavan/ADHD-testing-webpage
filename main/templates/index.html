@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADHD Test - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles2.css') }}">
+</head>
+<body>
+    <nav>
+
+    </nav>
+    <div class="container">
+        <!-- Logo & Heading -->
+        <div class="logo-section">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="ADHD Test Logo" class="logo">
+            <h1>ADHD Test</h1>
+        </div>
+
+        <!-- Description -->
+        <p class="description">
+            This test is designed to help assess ADHD symptoms. Answer each question honestly to get the most accurate results.
+        </p>
+
+        <!-- Start Button -->
+        <button class="start-btn" onclick="startTest()">Start Test</button>
+    </div>
+
+    <script>
+        function startTest() {
+            window.location.href = "{{ url_for('test') }}";  // Replace 'test_page' with the correct Flask route
+        }
+    </script>
+</body>
+</html>
